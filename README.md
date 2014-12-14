@@ -19,10 +19,133 @@ MyApiFilms.searchActByName(ACTORNAME, parameters, callback); //Search actor by N
 */
 MyApiFilms.tmdbSeachByTitle(TITLE, parameters, callback); //Search Movie by TITLE
 MyApiFilms.tmdbSearchById(IMDBID, parameters, callback); // Search Movie by ID
+
+callback = function(data)
+{
+	//data will be an object containing the results
+}
 ```
 
 ##Parameters
-Exhaustive list of parameters is available [here][myapifilms_imdb] for IMDB and [here][myapifilms_tmdb] for TMDB
+Exhaustive list of parameters and usage is available [here][myapifilms_imdb] for IMDB and [here][myapifilms_tmdb] for TMDB
+
+###getById
+```js
+parameters = {
+	"actors": "N",
+	"actorActress": 0,
+	"actorTrivia": 0,
+	"aka": 0,
+	"awards": 0,
+	"bornDied": 0,
+	"business": 0,
+	"filmography": 0,
+	"lang": "en-us",
+	"movieTrivia": 0,
+	"seasons": 0,
+	"seasonYear": 0,
+	"starSign": 0,
+	"technical": 0,
+	"trailer": 0,
+	"uniqueName": 0
+};
+```
+
+###searchByTitle
+```js
+parameters = {
+	"actors": "N",
+	"actorActress": 0,
+	"actorTrivia": 0,
+	"aka": 0,
+	"awards": 0,
+	"bornDied": 0,
+	"business": 0,
+	"exactFilter": 0,
+	"filmography": 0,
+	"filter": "N",
+	"lang": "en-us",
+	"limit": "1",
+	"movieTrivia": 0,
+	"offset": 0,
+	"seasons": 0,
+	"seasonYear": 0,
+	"starSign": 0,
+	"technical": 0,
+	"trailer": 0,
+	"uniqueName": 0,
+	"year": ""
+};
+```
+
+###searchByTitle
+```js
+parameters = {
+	"actors": "N",
+	"actorActress": 0,
+	"actorTrivia": 0,
+	"aka": 0,
+	"awards": 0,
+	"bornDied": 0,
+	"business": 0,
+	"exactFilter": 0,
+	"filmography": 0,
+	"filter": "N",
+	"lang": "en-us",
+	"limit": "1",
+	"movieTrivia": 0,
+	"offset": 0,
+	"seasons": 0,
+	"seasonYear": 0,
+	"starSign": 0,
+	"technical": 0,
+	"trailer": 0,
+	"uniqueName": 0,
+	"year": ""
+};
+```
+
+###getActById
+```js
+parameters = {
+	"actorActress": 0,
+	"actorTrivia": 0,
+	"bornDied": 0,
+	"filmography": 0,
+	"lang": "en-us",
+	"starSign": 0,
+	"uniqueName": 0
+};
+```
+
+###tmdbSeachByTitle
+```js
+parameters = {
+	"year": 0,
+	"language": "en",
+	"includeAdult": 1,
+	"page": 0
+};
+```
+
+###tmdbSearchById
+```js
+parameters = {
+	"language": "en",
+	"alternativeTitles": 0,
+	"casts": 0,
+	"images": 0,
+	"keywords": 0,
+	"releases": 0,
+	"trailers": 0,
+	"translations": 0,
+	"similarMovies": 0,
+	"reviews": 0,
+	"lists": 0
+};
+```
+
+###searchActByName
 
 ##License
 This product is released under the [MIT License][opensource].
