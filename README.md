@@ -1,6 +1,26 @@
 #MyApiFilms NodeJS module
 This module queries myapifilms.com and allows you to retrieve infos about films and actors via IMDB or TMDB
 
+## Overview
+
+* [Install](#install)
+* [Usage](#usage)
+* [Parameters](#prameters)
+	IMDB
+	* [getById](#getById)
+	* [searchByTitle](#searchByTitle)
+	* [getActById](#getActById)
+	* [searchActByName](#searchActByName)
+	TMDB
+	* [tmdbSeachByTitle](#tmdbSeachByTitle)
+	* [tmdbSearchById](#tmdbSearchById)
+* [License](#license)
+
+##Install
+```
+npm install myapifilms
+```
+
 ##Usage
 ```js
 var MyApiFilms = require('myapifilms');
@@ -78,33 +98,6 @@ parameters = {
 };
 ```
 
-###searchByTitle
-```js
-parameters = {
-	"actors": "N",
-	"actorActress": 0,
-	"actorTrivia": 0,
-	"aka": 0,
-	"awards": 0,
-	"bornDied": 0,
-	"business": 0,
-	"exactFilter": 0,
-	"filmography": 0,
-	"filter": "N",
-	"lang": "en-us",
-	"limit": "1",
-	"movieTrivia": 0,
-	"offset": 0,
-	"seasons": 0,
-	"seasonYear": 0,
-	"starSign": 0,
-	"technical": 0,
-	"trailer": 0,
-	"uniqueName": 0,
-	"year": ""
-};
-```
-
 ###getActById
 ```js
 parameters = {
@@ -113,6 +106,22 @@ parameters = {
 	"bornDied": 0,
 	"filmography": 0,
 	"lang": "en-us",
+	"starSign": 0,
+	"uniqueName": 0
+};
+```
+
+###searchActByName
+```js
+parameters = {
+	"actorActress": 0,
+	"actorTrivia": 0,
+	"bornDied": 0,
+	"exactFilter": 0,
+	"filmography": 0,
+	"lang": "en-us",
+	"limit": 1,
+	"offset": 0,
 	"starSign": 0,
 	"uniqueName": 0
 };
@@ -144,8 +153,6 @@ parameters = {
 	"lists": 0
 };
 ```
-
-###searchActByName
 
 ##License
 This product is released under the [MIT License][opensource].
