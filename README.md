@@ -28,5 +28,5 @@ Exhaustive list of parameters is available [here][myapifilms_imdb] for IMDB and 
 This product is released under the [MIT License][opensource].
 
 [myapifilms_imdb]: http://www.myapifilms.com/index.jsp
-[myapifilms_tmdb]: http://www.myapifilms.com/index.jsp
+[myapifilms_tmdb]: http://www.myapifilms.com/tmdb.jsp
 [opensource]: http://www.opensource.org/licenses/MIT
