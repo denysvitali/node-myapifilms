@@ -6,12 +6,12 @@ This module queries myapifilms.com and allows you to retrieve infos about films 
 * [Install](#install)
 * [Usage](#usage)
 * [Parameters](#parameters)
-	IMDB
-	* [getById](#getById)
+	- IMDB
+	* [getById](##getById)
 	* [searchByTitle](#searchByTitle)
 	* [getActById](#getActById)
 	* [searchActByName](#searchActByName)
-	TMDB
+	- TMDB
 	* [tmdbSeachByTitle](#tmdbSeachByTitle)
 	* [tmdbSearchById](#tmdbSearchById)
 * [License](#license)
