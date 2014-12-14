@@ -1,0 +1,106 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'publish', './' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node symlink /usr/bin/node
+5 verbose publish [ './' ]
+6 verbose cache add [ './', null ]
+7 verbose cache add name=undefined spec="./" args=["./",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: './',
+8 verbose parsed url   path: './',
+8 verbose parsed url   href: './' }
+9 silly lockFile 0ee6c175- ./
+10 verbose lock ./ /home/denys/.npm/0ee6c175-.lock
+11 verbose tar pack [ '/home/denys/.npm/MyApiFilms/0.0.1/package.tgz', './' ]
+12 verbose tarball /home/denys/.npm/MyApiFilms/0.0.1/package.tgz
+13 verbose folder ./
+14 info prepublish MyApiFilms@0.0.1
+15 silly lockFile 04cb2bca-tar tar://./
+16 verbose lock tar://./ /home/denys/.npm/04cb2bca-tar.lock
+17 silly lockFile 4221658e-npm-MyApiFilms-0-0-1-package-tgz tar:///home/denys/.npm/MyApiFilms/0.0.1/package.tgz
+18 verbose lock tar:///home/denys/.npm/MyApiFilms/0.0.1/package.tgz /home/denys/.npm/4221658e-npm-MyApiFilms-0-0-1-package-tgz.lock
+19 silly lockFile 04cb2bca-tar tar://./
+20 silly lockFile 04cb2bca-tar tar://./
+21 silly lockFile 4221658e-npm-MyApiFilms-0-0-1-package-tgz tar:///home/denys/.npm/MyApiFilms/0.0.1/package.tgz
+22 silly lockFile 4221658e-npm-MyApiFilms-0-0-1-package-tgz tar:///home/denys/.npm/MyApiFilms/0.0.1/package.tgz
+23 silly lockFile d9c3a643-nys-npm-MyApiFilms-0-0-1-package /home/denys/.npm/MyApiFilms/0.0.1/package
+24 verbose lock /home/denys/.npm/MyApiFilms/0.0.1/package /home/denys/.npm/d9c3a643-nys-npm-MyApiFilms-0-0-1-package.lock
+25 silly lockFile d9c3a643-nys-npm-MyApiFilms-0-0-1-package /home/denys/.npm/MyApiFilms/0.0.1/package
+26 silly lockFile d9c3a643-nys-npm-MyApiFilms-0-0-1-package /home/denys/.npm/MyApiFilms/0.0.1/package
+27 silly lockFile 0ee6c175- ./
+28 silly lockFile 0ee6c175- ./
+29 silly publish { name: 'MyApiFilms',
+29 silly publish   description: 'Queries myapifilm.com for IMDB and TMDB API',
+29 silly publish   keywords: [ 'myapifilms', 'movie', 'api', 'imdb', 'tmdb' ],
+29 silly publish   version: '0.0.1',
+29 silly publish   author: { name: 'Denys Vitali', email: 'denys@denv.it' },
+29 silly publish   directories: {},
+29 silly publish   dependencies: { request: '2.51.x' },
+29 silly publish   repository:
+29 silly publish    { type: 'git',
+29 silly publish      url: 'http://github.com/denysvitali/node-myapifilms.git' },
+29 silly publish   bugs: { url: 'http://github.com/denysvitali/node-myapifilms' },
+29 silly publish   main: './lib/myapifilms',
+29 silly publish   license: 'MIT',
+29 silly publish   homepage: 'http://github.com/denysvitali/node-myapifilms',
+29 silly publish   contributors: [ { name: 'denysvitali', email: 'denys@denv.it' } ],
+29 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+29 silly publish   readme: '#MyApiFilms NodeJS module\nThis module queries myapifilms.com and allows you to retrieve infos about films and actors via IMDB or TMDB',
+29 silly publish   readmeFilename: 'README.md',
+29 silly publish   gitHead: '1cdb34132dda8d6261f5e2c4badbac587eb2d342',
+29 silly publish   _id: 'MyApiFilms@0.0.1',
+29 silly publish   _shasum: '51254a8cbb1a0b7330064fe91f764cc6a90734de',
+29 silly publish   _from: './' }
+30 verbose request where is /MyApiFilms
+31 verbose request registry https://registry.npmjs.org/
+32 verbose request id 35ed4cdb72c1e578
+33 verbose url raw /MyApiFilms
+34 verbose url resolving [ 'https://registry.npmjs.org/', './MyApiFilms' ]
+35 verbose url resolved https://registry.npmjs.org/MyApiFilms
+36 verbose request where is https://registry.npmjs.org/MyApiFilms
+37 info trying registry request attempt 1 at 13:33:48
+38 http PUT https://registry.npmjs.org/MyApiFilms
+39 http 403 https://registry.npmjs.org/MyApiFilms
+40 verbose headers { date: 'Sun, 14 Dec 2014 12:34:29 GMT',
+40 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+40 verbose headers   'content-type': 'application/json',
+40 verbose headers   'cache-control': 'max-age=60',
+40 verbose headers   'content-length': '76',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   'x-served-by': 'cache-fra1243-FRA',
+40 verbose headers   'x-cache': 'MISS',
+40 verbose headers   'x-cache-hits': '0',
+40 verbose headers   'x-timer': 'S1418560468.620696,VS0,VE683',
+40 verbose headers   'keep-alive': 'timeout=10, max=50',
+40 verbose headers   connection: 'Keep-Alive' }
+41 error publish Failed PUT 403
+42 error Error: forbidden New packages must have all-lowercase names: MyApiFilms
+42 error     at RegClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
+42 error     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
+42 error     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:236:22)
+42 error     at Request.emit (events.js:98:17)
+42 error     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+42 error     at Request.emit (events.js:117:20)
+42 error     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+42 error     at IncomingMessage.emit (events.js:117:20)
+42 error     at _stream_readable.js:943:16
+42 error     at process._tickCallback (node.js:419:13)
+43 error If you need help, you may report this *entire* log,
+43 error including the npm and node versions, at:
+43 error     <http://github.com/npm/npm/issues>
+44 error System Linux 3.13.0-24-generic
+45 error command "/usr/bin/node" "/usr/bin/npm" "publish" "./"
+46 error cwd /home/denys/Documents/node/streamer/node_modules/myapifilms
+47 error node -v v0.10.33
+48 error npm -v 1.4.28
+49 verbose exit [ 1, true ]

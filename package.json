@@ -1,44 +1,33 @@
 {
-	"name": "MyApiFilms",
-	"description": "Queries myapifilm.com for IMDB and TMDB API",
-	"keywords": [
-		"myapifilms",
-		"movie",
-		"api",
-		"imdb",
-		"tmdb"
-	],
-	"version": "0.0.1",
-	"author":
-	{
-		"name": "Denys Vitali",
-		"email": "denys@denv.it"
-	},
-	"directories":
-	{
-		"lib": "lib"
-	},
-	"dependencies":
-	{
-		"request": "2.51.x"
-	},
-	"repository":
-	{
-		"type": "git",
-		"url": "http://github.com/denysvitali/node-myapifilms.git"
-	},
-	"bugs":
-	{
-		"url": "http://github.com/denysvitali/node-myapifilms"
-	},
-	"main": "./lib/myapifilms",
-	"license": "MIT",
-	"homepage": "http://github.com/denysvitali/node-myapifilms",
-	"contributors": [
-	{
-		"name": "denysvitali",
-		"email": "denys@denv.it"
-	}],
-	"directories":
-	{}
+  "name": "myapifilms",
+  "description": "Queries myapifilm.com for IMDB and TMDB API",
+  "keywords": [
+    "myapifilms",
+    "movie",
+    "api",
+    "imdb",
+    "tmdb"
+  ],
+  "version": "0.0.1",
+  "author": "Denys Vitali <denys@denv.it>",
+  "directories": {},
+  "dependencies": {
+    "request": "2.51.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/denysvitali/node-myapifilms.git"
+  },
+  "bugs": {
+    "url": "http://github.com/denysvitali/node-myapifilms"
+  },
+  "main": "./lib/myapifilms",
+  "license": "MIT",
+  "homepage": "http://github.com/denysvitali/node-myapifilms",
+  "contributors": [
+    "denysvitali <denys@denv.it>"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
